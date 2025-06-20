@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Intro from "./components/intro/Intro.jsx";
 import Signup from "./components/Signup.jsx";
-import Login from "./components/login.jsx";
+import Login from "./components/Login.jsx";
 import MsgArea from "./components/Main/msgArea.jsx";
 
 const App = () => {
