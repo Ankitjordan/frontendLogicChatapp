@@ -13,10 +13,13 @@ const Login = ({ setRoomKey, setDisplay }) => {
     e.preventDefault();
     const target = e.target;
     try {
-      const res = await axios.post("http://172.20.10.9:4000/existingroom", {
-        roomId: target.roomId.value,
-        password: target.password.value,
-      });
+      const res = await axios.post(
+        "https://backendchat-kappa.vercel.app/existingroom",
+        {
+          roomId: target.roomId.value,
+          password: target.password.value,
+        }
+      );
       setShowError(false);
       setRoomKey(res.data.userName);
       setDisplay("msgarea");

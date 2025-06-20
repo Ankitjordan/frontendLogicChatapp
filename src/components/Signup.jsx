@@ -13,11 +13,14 @@ const Signup = ({ setDisplay, setRoomKey }) => {
     const target = e.target;
 
     try {
-      const res = await axios.post("http://172.20.10.9:4000/newroom", {
-        name: target.name.value,
-        roomId: target.roomId.value,
-        password: target.password.value,
-      });
+      const res = await axios.post(
+        "https://backendchat-kappa.vercel.app/newroom",
+        {
+          name: target.name.value,
+          roomId: target.roomId.value,
+          password: target.password.value,
+        }
+      );
       setRoomKey(target.name.value);
       setDisplay("msgarea");
     } catch (error) {

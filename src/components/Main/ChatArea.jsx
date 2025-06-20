@@ -11,9 +11,12 @@ const ChatArea = ({ roomKey }) => {
   useEffect(() => {
     const getMsg = async () => {
       try {
-        const info = await axios.post("http://172.20.10.9:4000/messagedata", {
-          name: roomKey,
-        });
+        const info = await axios.post(
+          "https://backendchat-kappa.vercel.app/messagedata",
+          {
+            name: roomKey,
+          }
+        );
         const msgArray = info.data.map((x) => x.msg);
         setMessages(msgArray);
       } catch (error) {
@@ -39,10 +42,13 @@ const ChatArea = ({ roomKey }) => {
     if (!message.trim()) return;
     socket.emit("send-message", { roomKey, message });
     try {
-      const res = await axios.post("http://172.20.10.9:4000/messageroom", {
-        name: roomKey,
-        message: message,
-      });
+      const res = await axios.post(
+        "https://backendchat-kappa.vercel.app/messageroom",
+        {
+          name: roomKey,
+          message: message,
+        }
+      );
 
       console.log(res.data.feedback);
     } catch (error) {
