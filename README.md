@@ -1,12 +1,47 @@
-# React + Vite
+# 💬 Real-time Chat App using Socket.IO (Frontend + Backend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time chat application built using **React.js** (frontend) and **Node.js + Express + Socket.IO** (backend). This app allows users to join rooms and exchange messages in real-time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Link
 
-## Expanding the ESLint configuration
+- 🌐 **Frontend Live:** [Click Here](https://frontend-logic-chatapp.vercel.app/)
+- 🗂️ **Backend Repository:** [Click Here](https://github.com/Ankitjordan/backendchat)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+### Frontend:
+- React.js
+- Tailwind CSS (or your styling method)
+- Axios
+- Socket.IO Client
+
+### Backend:
+- Node.js
+- Express.js
+- Socket.IO
+- CORS
+- Railway Deployment
+
+---
+
+## ✨ Features
+
+- ✅ Real-time messaging using Socket.IO
+- ✅ Join and chat in different rooms
+- ✅ Clean and responsive UI
+- ✅ Frontend and backend hosted/deployed separately
+
+---
+
+## ⚙️ How to Run Locally
+
+### 1. Clone both repositories:
+
+```bash
+git clone https://github.com/Ankitjordan/frontendLogicChatapp.git
+git clone https://github.com/Ankitjordan/backendchat.git
+
