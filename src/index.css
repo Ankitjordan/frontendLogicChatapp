@@ -4,6 +4,7 @@
 @theme {
   --breakpoint-sd: 800px;
   --breakpoint-sc: 750px;
+  --breakpoint-sp: 500px;
 }
 
 body,
