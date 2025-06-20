@@ -79,7 +79,7 @@ const ChatArea = ({ roomKey }) => {
         </div>
       </div>
 
-      <div className="h-[8%] w-full flex justify-center mt-4 gap-2 items-center px-2 max-sm:h-[12%] max-sm:mt-6 max-sc:w-[80vw]">
+      <div className="h-[8%] w-full flex justify-center mt-4 gap-2 items-center px-2 max-sm:h-[12%] max-sm:mt-6 max-sc:w-[80vw] max-sp:px-0">
         <input
           className="flex-1 h-12 border-2 border-purple-500 rounded-full text-lg px-4 focus:outline-none text-white bg-white/10 placeholder:text-white/70 transition-all duration-300 focus:ring-2 focus:ring-purple-400 shadow-md backdrop-blur-sm animate-pulse "
           placeholder="Start Messaging"
