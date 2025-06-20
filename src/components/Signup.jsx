@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import axios from "axios";
-import Floating from "./floating";
+import Floating from "./floating.jsx";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import { IoReturnUpBackSharp } from "react-icons/io5";
 
