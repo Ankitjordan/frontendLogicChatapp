@@ -66,19 +66,23 @@ const ChatArea = ({ roomKey }) => {
 
   return (
     <div className="col-span-2 h-full order-2 flex flex-col max-sc:w-screen max-sk:items-center">
-      <div className="flex-1 rounded-lg overflow-y-auto p-4 bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] backdrop-blur-sm bg-opacity-90 animate-fade-in">
-        <div className="flex flex-col gap-3">
-          {messages.map((element, index) => (
-            <div
-              key={index}
-              className="inline-block max-w-[75%] rounded-xl text-blue-100 text-lg px-4 py-2 break-words self-start backdrop-blur-sm bg-blue-500/10 border border-blue-200/20 shadow-md animate-slide-up"
-            >
-              {element}
-            </div>
-          ))}
+      {/* ✅ Scrollable Message Area */}
+      <div className="flex-1 overflow-hidden rounded-lg bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] backdrop-blur-sm bg-opacity-90 animate-fade-in">
+        <div className="h-full overflow-y-auto p-4">
+          <div className="flex flex-col gap-3">
+            {messages.map((element, index) => (
+              <div
+                key={index}
+                className="inline-block max-w-[75%] rounded-xl text-blue-100 text-lg px-4 py-2 break-words self-start backdrop-blur-sm bg-blue-500/10 border border-blue-200/20 shadow-md animate-slide-up"
+              >
+                {element}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
+      {/* ✅ Fixed Bottom Input Area */}
       <div className="h-[8%] w-full flex justify-center mt-4 gap-2 items-center px-2 max-sm:h-[12%] max-sm:mt-6 max-sc:w-[80vw] max-sp:px-0 flex-row">
         <input
           className="flex-1 h-12 border-2 border-purple-500 rounded-full text-lg px-4 focus:outline-none text-white bg-white/10 placeholder:text-white/70 transition-all duration-300 focus:ring-2 focus:ring-purple-400 shadow-md backdrop-blur-sm animate-pulse max-sp:ml-2 max-sk:text-[10px]"
