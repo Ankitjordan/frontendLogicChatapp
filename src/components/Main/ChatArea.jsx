@@ -12,7 +12,7 @@ const ChatArea = ({ roomKey }) => {
     const getMsg = async () => {
       try {
         const info = await axios.post(
-          "https://backendchat-kappa.vercel.app/messagedata",
+          "https://backendchat-production-8200.up.railway.app/messagedata",
           {
             name: roomKey,
           }
@@ -43,7 +43,7 @@ const ChatArea = ({ roomKey }) => {
     socket.emit("send-message", { roomKey, message });
     try {
       const res = await axios.post(
-        "https://backendchat-kappa.vercel.app/messageroom",
+        "https://backendchat-production-8200.up.railway.app/messageroom",
         {
           name: roomKey,
           message: message,

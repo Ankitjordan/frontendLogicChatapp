@@ -14,7 +14,7 @@ const Signup = ({ setDisplay, setRoomKey }) => {
 
     try {
       const res = await axios.post(
-        "https://backendchat-kappa.vercel.app/newroom",
+        "https://backendchat-production-8200.up.railway.app/newroom",
         {
           name: target.name.value,
           roomId: target.roomId.value,

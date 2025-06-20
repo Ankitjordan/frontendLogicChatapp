@@ -14,7 +14,7 @@ const Login = ({ setRoomKey, setDisplay }) => {
     const target = e.target;
     try {
       const res = await axios.post(
-        "https://backendchat-kappa.vercel.app/existingroom",
+        "https://backendchat-production-8200.up.railway.app/existingroom",
         {
           roomId: target.roomId.value,
           password: target.password.value,
