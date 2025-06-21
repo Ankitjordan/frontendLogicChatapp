@@ -65,9 +65,9 @@ const ChatArea = ({ roomKey }) => {
   };
 
   return (
-    <div className="col-span-2 h-full order-2 flex flex-col max-sc:w-screen max-sk:items-center">
+    <div className="col-span-2 h-full order-2 flex flex-col   max-sc:h-[80vh] ">
       {/* ✅ Scrollable Message Area */}
-      <div className="flex-1 overflow-hidden rounded-lg bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] backdrop-blur-sm bg-opacity-90 animate-fade-in">
+      <div className="flex-1  rounded-lg bg-gradient-to-br from-[#1e3c72] via-[#2a5298] to-[#1e3c72] backdrop-blur-sm bg-opacity-90 animate-fade-in overflow-auto">
         <div className="h-full overflow-y-auto p-4">
           <div className="flex flex-col gap-3">
             {messages.map((element, index) => (
