@@ -16,9 +16,9 @@ const Signup = ({ setDisplay, setRoomKey }) => {
       const res = await axios.post(
         "https://backendchat-production-8200.up.railway.app/newroom",
         {
-          name: target.name.value,
-          roomId: target.roomId.value,
-          password: target.password.value,
+          name: target.name.value.trim(),
+          roomId: target.roomId.value.trim(),
+          password: target.password.value.trim(),
         }
       );
       setRoomKey(target.name.value);

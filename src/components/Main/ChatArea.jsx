@@ -38,6 +38,8 @@ const ChatArea = ({ roomKey }) => {
     };
   }, []);
 
+  useEffect(() => {}, [messages]);
+
   const handleSend = async () => {
     if (!message.trim()) return;
     socket.emit("send-message", { roomKey, message });
