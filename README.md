@@ -4,6 +4,15 @@ A real-time chat application built using **React.js** (frontend) and **Node.js +
 
 ---
 
+### ⚠️ **Notice (Temporary Downtime)**
+
+🚧 This app is currently **under reconstruction** due to some major updates and changes.  
+🔧 **Live features may not work** as expected until the update process is completed.
+
+Stay tuned for an improved experience. Thanks for your patience! 🙏
+
+---
+
 ## 🔗 Live Link
 
 - 🌐 **Frontend Live:** [Click Here](https://frontend-logic-chatapp.vercel.app/)
@@ -44,4 +53,5 @@ A real-time chat application built using **React.js** (frontend) and **Node.js +
 ```bash
 git clone https://github.com/Ankitjordan/frontendLogicChatapp.git
 git clone https://github.com/Ankitjordan/backendchat.git
+
 
